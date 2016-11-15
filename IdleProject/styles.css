@@ -1,0 +1,39 @@
+
+body{
+  background-image: url("resources/pixelspace.jpg");
+}
+
+#container{
+  margin: auto;
+  background: #2c3e50;
+  padding: 24px;
+  width: 60%;
+  height: 90vh;
+  color: #fff;
+}
+
+button{
+  width: 190px;
+  border: 2px solid black;
+  background-color: #2980b9;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  padding: 0.1em;
+  font-size: 1.0em;
+  font-weight: 500;
+  outline: none;
+}
+
+#meter{
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: #ddd;
+}
+
+#progress{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #4CAF50;
+}
