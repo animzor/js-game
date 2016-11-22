@@ -7,18 +7,195 @@
 
 <body>
 
-<div id="container">
-
-<div id="scoreButton">
-<button type="button" onclick="scoreUp(1)"> Click here </button>
-Score: <span id="score">0</span>
-</br>
+<div id="header">
+<a href="forum/new_category.php">Forum</a>
 </div>
 
-<div id="buyAutoClickerButton">
-<button type="button" onclick="buyAutoClicker()"> Buy auto clicker </button>
-Cost: <span id="autoClickerCost">5</span>
-Auto clickers: <span id="nrOfAutoClickers">0</span>
+<div id="container">
+
+<div id="left-side">
+
+<div id="resource-container">
+
+<div id="scrapButton">
+<button type="button" onclick="increment(scrap)"> Collect scrap metal </button>
+<span id="scrap-total">0</span> <img src="resources/cog.png" align="top">
+<span id="net-scrap">0</span> /s
+</div>
+
+</br>
+
+<div id="gasButton">
+<button type="button" onclick="increment(gas)"> Collect gas </button>
+<span id="gas-total">0</span> <img src="resources/gas.png" align="top">
+<span id="net-gas">0</span> /s
+</div>
+
+</br>
+
+<div id="radioactiveButton">
+<button type="button" onclick="increment(radioactive)"> Collect radioactive materials </button>
+<span id="radioactive-total">0</span> <img src="resources/radioactive.png" align="top">
+<span id="net-rad">0</span> /s
+</div>
+
+</br>
+
+</div>
+
+<div id="item-container">
+<table id="item-builder">
+
+<tr>
+<th>
+Worker droid
+</th>
+<th>
+ 20 <img src="resources/cog.png" align="top"> 20 <img src="resources/gas.png" align="top">  20 <img src="resources/radioactive.png" align="top">
+</th>
+<th>
+<button id="small-button" onclick="buyDroid()">buy</button>
+</th>
+<th>
+Nr: <span id="droidCost">0</span>
+</th>
+
+</tr>
+
+<tr>
+<th>
+Scrap drill
+</th>
+<th>
+ 500 <img src="resources/cog.png" align="top"> 500 <img src="resources/gas.png" align="top">  500 <img src="resources/radioactive.png" align="top">
+</th>
+<th>
+<button id="small-button" onclick="build(scrapDrill)">buy</button>
+</th>
+<th>
+Nr: <span id="scrpDrills">0</span>
+</th>
+
+</tr>
+
+<tr>
+<th>
+Gas drill
+</th>
+<th>
+ 500 <img src="resources/cog.png" align="top">  500 <img src="resources/gas.png" align="top">  500 <img src="resources/radioactive.png" align="top">
+</th>
+<th>
+<button id="small-button" onclick="build(gasDrill)">buy</button>
+</th>
+
+<th>
+Nr: <span id="gasDrills">0</span>
+</th>
+</tr>
+
+<tr>
+<th>
+Radioactive drill
+</th>
+<th>
+ 500 <img src="resources/cog.png" align="top">  500 <img src="resources/gas.png" align="top">  500 <img src="resources/radioactive.png" align="top">
+</th>
+<th>
+<button id="small-button" onclick="build(radDrill)">buy</button>
+</th>
+
+<th>
+Nr: <span id="radDrills">0</span>
+</th>
+</tr>
+
+<tr>
+<th>
+Droid factory
+</th>
+<th>
+ 1000 <img src="resources/cog.png" align="top">  1000 <img src="resources/gas.png" align="top">  1000 <img src="resources/radioactive.png" align="top">
+</th>
+<th>
+<button id="small-button" onclick="build(droidFactory)">buy</button>
+</th>
+
+<th>
+Nr: <span id="droidFacts">0</span>
+</th>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+<div id="right-side">
+<table id="poptable">
+<tr>
+<th>Scrappers</th>
+<th><span id="scrapper-total">0</span></th>
+<th><button id="small-button" onClick="assignDroid(scrapper)">Assign</button></th>
+</tr>
+<tr>
+<th>Extractors</th>
+<th><span id="extractor-total">0</span></th>
+<th><button id="small-button" onClick="assignDroid(extractor)">Assign</button></th>
+</tr>
+<tr>
+<th>Miners</th>
+<th><span id="miner-total">0</span></th>
+<th><button id="small-button" onClick="assignDroid(miner)">Assign</button></th>
+</tr>
+<tr>
+<th>Droids</th>
+<th><span id="droid-total">0</span></th>
+</tr>
+</table>
+
+<div id="map-container">
+<ul class="sectors">
+<li id="sector1"></li>
+<li id="sector2"></li>
+<li id="sector3"></li>
+<li id="sector4"></li>
+<li id="sector5"></li>
+<li id="sector6"></li>
+<li id="sector7"></li>
+<li id="sector8"></li>
+<li id="sector9"></li>
+<li id="sector10"></li>
+<li id="sector11"></li>
+<li id="sector12"></li>
+<li id="sector13"></li>
+<li id="sector14"></li>
+<li id="sector15"></li>
+<li id="sector16"></li>
+<li id="sector17"></li>
+<li id="sector18"></li>
+<li id="sector19"></li>
+<li id="sector20"></li>
+<li id="sector21"></li>
+<li id="sector22"></li>
+<li id="sector23"></li>
+<li id="sector24"></li>
+<li id="sector25"></li>
+<li id="sector26"></li>
+<li id="sector27"></li>
+<li id="sector28"></li>
+<li id="sector29"></li>
+<li id="sector30"></li>
+<li id="sector31"></li>
+<li id="sector32"></li>
+<li id="sector33"></li>
+<li id="sector34"></li>
+<li id="sector35"></li>
+<li id="sector36"></li>
+</ul>
+<div id="map">
+<img src="resources/map.png">
+</div>
 </div>
 
 <div id="meter">
@@ -26,6 +203,9 @@ Auto clickers: <span id="nrOfAutoClickers">0</span>
 </div>
 
 </div>
+
+</div>
+
 <div id="events" classname="events"></div>
 
 </body>

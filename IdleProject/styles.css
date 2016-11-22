@@ -3,6 +3,19 @@ body{
   background-image: url("resources/pixelspace.jpg");
 }
 
+div{
+	display:block;
+}
+
+ul, li{
+	display:inline-block;
+	margin:0px;
+	padding:0px;
+	line-height: 0em;
+	margin-right:-2px;
+
+}
+
 #container{
   margin: auto;
   background: #2c3e50;
@@ -10,6 +23,38 @@ body{
   width: 60%;
   height: 90vh;
   color: #fff;
+  overflow:hidden;
+}
+
+#left-side{
+	float:left;
+	width:50%;
+}
+
+#right-side{
+	float:left;
+	width:50%;
+}
+
+#item-container{
+
+}
+
+#resource-container{
+	margin-bottom:1em;
+}
+
+table{
+	border: 1px solid black;
+}
+
+th{
+	height:25px;
+}
+
+table#item-builder{
+	float:left;
+	width:100%;
 }
 
 button{
@@ -24,16 +69,272 @@ button{
   outline: none;
 }
 
+button#small-button{
+	width:60px;
+	margin:0;
+}
+
+#poptable{
+	float:left;
+}
+
+#map-container{
+	position:relative;
+	margin-left:50px;
+	float:left;
+}
+
+.sectors{
+	list-style-type:none;
+	position:absolute;
+	margin-left:1px;
+}
+
+.sectors li:nth-child(n-7) {
+	margin-top:1px;
+}
+
+.sectors li:nth-child(n+7) {
+	margin-top:2px;
+}
+
+#sector1{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+
+}
+#sector2{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+
+}
+#sector3{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+
+}
+#sector4{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+
+}
+#sector5{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+
+}
+#sector6{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+
+}
+#sector7{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector8{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector9{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector10{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector11{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector12{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector13{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector14{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector15{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector16{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector17{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector18{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector19{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector20{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector21{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector22{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector23{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector24{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector25{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector26{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector27{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector28{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector29{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector30{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector31{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector32{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector33{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector34{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector35{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+#sector36{
+	background-color: #00ff00;
+	width:15px;
+	height:15px;
+
+}
+
+#map{
+}
+
 #meter{
-  position: relative;
-  width: 100%;
-  height: 30px;
-  background-color: #ddd;
+  position:relative;
+  float:right;
+  height:400px;
+  width:30px;
+  background-color:#ddd;
 }
 
 #progress{
   position: absolute;
-  width: 0%;
-  height: 100%;
+  height: 0%;
+  width: 30px;
   background-color: #4CAF50;
 }
